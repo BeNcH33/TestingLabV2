@@ -50,7 +50,8 @@ namespace TestingLab3V2
 		[Test]
 		public void LessOrEqualTest()
 		{
-			Assert.IsTrue(new Versions("1.0.0") <= new Versions("1.1.0"));
+			Assert.IsTrue(new Versions("1.0.0") <= new Versions("1.1.0")); 
+			Assert.IsTrue(new Versions("1.0.0") <= new Versions("1.0.0"));
 			Assert.IsFalse(new Versions("5.8.1-alpha") <= new Versions("4.8.7-alpha"));
 			Assert.IsFalse(new Versions("4.1.7-alpha.5") <= new Versions("4.1.7-alpha.1"));
 	

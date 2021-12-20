@@ -54,34 +54,34 @@ namespace TestingLab3V2
 			}
 		}
 
-		private static int ConvertPartToDigit(string part)
-		{
-			if (part == "alpha")
-			{
-				return -2;
-			}
-			if (part == "beta")
-			{
-				return -1;
-			}
-			return Convert.ToInt32(part);
-		}
+        private static int ConvertPartToDigit(string part)
+        {
+            if (part == "alpha")
+            {
+                return -2;
+            }
+            if (part == "beta")
+            {
+                return -1;
+            }
+            return Convert.ToInt32(part);
+        }
 
-		private static string ConvertDigitToPart(int? digit)
-		{
-			if (digit == -2)
-			{
-				return "alpha";
-			}
-			if (digit == -1)
-			{
-				return "beta";
-			}
-			return digit.ToString();
-		}
+        private static string ConvertDigitToPart(int? digit)
+        {
+            if (digit == -2)
+            {
+                return "alpha";
+            }
+            if (digit == -1)
+            {
+                return "beta";
+            }
+            return digit.ToString();
+        }
 
 
-		private static bool IsCorrect(string Versions)
+        private static bool IsCorrect(string Versions)
 		{
 			string[] splitedByDashVersion = Versions.Split('-');
 			if (splitedByDashVersion.Length == 1)
